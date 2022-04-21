@@ -1,0 +1,51 @@
+:root {
+    --primary-color: '#4a154b';
+    --secondary-color: '#c94b4b';
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import '~react-image-gallery/styles/css/image-gallery.css';
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+    border: 2px solid #c94b4b;
+}
+
+.image-gallery-thumbnail:hover {
+    border: 2px solid #abb2b9;
+}
+
+.tabs {
+    @apply p-4 text-center w-1/2 bg-gray-color cursor-pointer  box-content relative outline-none;
+}
+
+.active-tabs {
+    @apply p-4 text-center w-1/2 bg-primary-color cursor-pointer box-content relative outline-none text-white border-b border-b-transparent;
+}
+
+.tab-content {
+    @apply bg-white p-5 w-full h-full hidden;
+}
+
+.active-tab-content {
+    @apply bg-white p-5 w-full h-full block;
+}
