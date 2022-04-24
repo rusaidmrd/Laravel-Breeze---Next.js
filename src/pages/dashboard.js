@@ -1,17 +1,16 @@
-import AppLayout from '@/components/Layouts/AppLayout'
+import HeaderLayout from '@/components/Layouts/HeaderLayout'
 import Head from 'next/head'
 
 const Dashboard = () => {
     return (
-        <AppLayout
+        <HeaderLayout
             header={
                 <h2 className="font-semibold text-xl text-gray-800 leading-tight">
                     Dashboard
                 </h2>
             }>
-
             <Head>
-                <title>Laravel - Dashboard</title>
+                <title>Qapple - Dashboard</title>
             </Head>
 
             <div className="py-12">
@@ -23,7 +22,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-        </AppLayout>
+        </HeaderLayout>
     )
 }
 
